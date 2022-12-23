@@ -1,0 +1,121 @@
+/*@import url(import google font);*/
+:root{
+    --custom-color:rgb(87,82,81);
+    --padding:5px;
+    --medium-font-size:0.4cm;
+    --big-font-size:2.5cm;
+    --input-padding:10px 25px;
+    --border-radius:8px;
+    --margin-bottom:10px;
+    --margin-top:10px;
+    --border:1px solid rgb(87,82,81);
+}
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+    background:whitesmoke;
+    font-size: 14px;
+    font-family: "red mat display", sans-serif;
+}
+#container{
+    width: 1200px;
+    max-width: 100%;
+    min-height: 400px;
+    margin: 0 auto; /*to center it
+    /*border:solid brown;*/
+}
+.form-heading{
+    padding:5%;
+    background-color: steelblue;
+    color:white;
+   /* border: solid black;*/
+    border-radius: 10px;
+    text-decoration: solid;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.form-heading ul{
+  
+  list-style: none;
+}
+.form-heading li{
+    display: inline;
+    padding: var(--padding);
+    font-size: var(--medium-font-size);
+    float:right;
+}
+a{
+color: white;
+}
+a:hover{
+    color: rgb(0, 11, 20);
+}
+#lorem{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.form{
+    width:60%;
+    margin:0 auto; 
+    /*border:solid black;*/
+}
+.form-reg{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+   /* margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);*/
+   /* border:solid pink;*/
+}
+.form-reg-label{
+    color:var(--custom-color);
+    font-size: var(--medium-font-size);
+   /* margin-bottom: var(--margin-bottom);*/
+    /*margin-top: var(--margin-top);*/
+}
+input{
+    padding:var(--input-padding);
+    border-radius: var(--border-radius);
+}
+input::placeholder{
+    font-size: large;
+}
+input:focus{
+    outline-color: blue;
+}
+/*in the case of select, here i use radio*/
+select{
+    padding:var(--padding);
+    border-radius: var(--border-radius);
+    border:var(--border);
+    color:var(--custom-color)
+}
+.btn-submit{
+    margin-top: var(--margin-top);
+    border:none;
+    padding:12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: steelblue;
+    font-size: var(--medium-font-size);
+    color:white; 
+    transition: 0.3s;
+}
+.btn-submit:hover{
+    background: rgb(44,106,156);
+}
+/*media queries are to make it responsive to other smaller screens*/
+@media (max-width:840px) {
+    .form{
+        width:100%;
+    }    
+}
+
